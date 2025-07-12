@@ -2,7 +2,7 @@ import axios from "axios";
 
 // Base instance pointing to backend API
 const axiosInstance = axios.create({
-  baseURL: "http://localhost:5000/api", // Change to production URL when deploying
+  baseURL: "http://localhost:5000/api", 
 });
 
 // Attach JWT token to all outgoing requests

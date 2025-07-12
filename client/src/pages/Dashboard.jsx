@@ -12,7 +12,7 @@ import { FaPlus, FaRegUser, FaClock, FaSearch } from "react-icons/fa";
 // Components
 import ProfileDropdown from "../components/tasks/ProfileDropdown";
 import ProfileModal from "../components/tasks/ProfileModal";
-import Footer from "../components/tasks/Footer"; // ✅ newly added
+import Footer from "../components/tasks/Footer"; 
 
 const Dashboard = () => {
   const dispatch = useDispatch();
@@ -23,7 +23,7 @@ const Dashboard = () => {
   const [showDropdown, setShowDropdown] = useState(false);
   const [showProfileModal, setShowProfileModal] = useState(false);
   const dropdownRef = useRef(null);
-  const profileButtonRef = useRef(null); // ✅ Track Profile button separately
+  const profileButtonRef = useRef(null); 
 
   useEffect(() => {
     const fetchProfile = async () => {
@@ -146,7 +146,7 @@ const Dashboard = () => {
         )}
       </div>
 
-      {/* ✅ Footer */}
+      {/* Footer */}
       <Footer />
     </div>
   );

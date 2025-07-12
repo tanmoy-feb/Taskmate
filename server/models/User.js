@@ -24,7 +24,7 @@ const userSchema = new mongoose.Schema(
     resetToken: String,
     resetTokenExpires: Date,
 
-    // ✅ OTP-based reset
+    //  OTP-based reset
     otp: String,
     otpExpires: Date,
   },

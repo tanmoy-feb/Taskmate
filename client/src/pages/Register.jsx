@@ -12,7 +12,7 @@ const Register = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const dispatch = useDispatch();
-  const { error } = useSelector((state) => state.auth); // removed loading
+  const { error } = useSelector((state) => state.auth); 
   const navigate = useNavigate();
 
   const handleRegister = async (e) => {

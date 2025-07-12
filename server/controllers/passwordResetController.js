@@ -2,7 +2,7 @@ import crypto from "crypto";
 import User from "../models/User.js";
 import sendEmail from "../utils/sendEmail.js";
 
-// ✅ STEP 1: Send OTP to user
+//  STEP 1: Send OTP to user
 export const sendOtp = async (req, res) => {
   const { email } = req.body;
 
@@ -29,7 +29,7 @@ export const sendOtp = async (req, res) => {
   }
 };
 
-// ✅ STEP 2: Verify OTP
+//  STEP 2: Verify OTP
 export const verifyOtp = async (req, res) => {
   const { email, otp } = req.body;
 
@@ -56,7 +56,7 @@ export const verifyOtp = async (req, res) => {
   }
 };
 
-// ✅ STEP 3: Reset Password after OTP verification
+//  STEP 3: Reset Password after OTP verification
 export const resetPassword = async (req, res) => {
   const { email, password } = req.body;
 

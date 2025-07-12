@@ -19,14 +19,14 @@ app.use(express.json());
 
 // Routes
 app.use("/api/auth", authRoutes);
-app.use("/api/tasks", taskRoutes); // ✅ Mount task routes
+app.use("/api/tasks", taskRoutes); 
 
 // Root route (for test before frontend)
 app.get('/api', (req, res) => {
   res.send('API is running...');
 });
 
-// 🔻 === React Build Serving Code === 🔻
+// React Build Serving Code 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -37,7 +37,7 @@ app.use(express.static(path.join(__dirname, "../client/dist")));
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "../client/dist/index.html"));
 });
-// 🔺 === End of React Serving Code === 🔺
+
 
 // MongoDB Connection and Server Start
 mongoose
