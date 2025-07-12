@@ -59,7 +59,7 @@ export const loginUser = async (req, res) => {
   }
 };
 
-// ✅ @desc    Get user profile (protected route)
+//  @desc    Get user profile (protected route)
 export const getProfile = async (req, res) => {
   try {
     const user = await User.findById(req.user.id).select("-password");

@@ -6,7 +6,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 
 import authRoutes from "./routes/authRoutes.js";
-import taskRoutes from "./routes/taskRoutes.js"; // ✅ New Import
+import taskRoutes from "./routes/taskRoutes.js"; 
 
 dotenv.config();
 
