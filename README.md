@@ -1,11 +1,11 @@
 # Taskmate
 
-Live on: [https://taskmate.vercel.app](https://taskmate.vercel.app)
+Live on: [https://taskmate-i2p9.onrender.com](https://taskmate-i2p9.onrender.com)
 
 ## About the Project
 
 ### Project Overview  
-Taskmate is a secure and modern task management system built with a MERN stack architecture. It allows users to register, log in, and manage their personal tasks through a dynamic and responsive interface. The system includes a protected dashboard, a secure OTP-based password reset mechanism via email, and full task CRUD (Create, Read, Update, Delete) functionality for efficient task management
+Taskmate is a secure and modern task management system built with a MERN stack architecture. It allows users to register, log in, and manage their personal tasks through a dynamic and responsive interface. The system includes a protected dashboard, a secure OTP-based password reset mechanism via email, and full task CRUD (Create, Read, Update, Delete) functionality for efficient task management.
 
 ## Core Features  
 - User registration and login with hashed passwords  
