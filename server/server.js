@@ -31,12 +31,12 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Serve static files from client/dist
-app.use(express.static(path.join(__dirname, "../client/dist")));
+//app.use(express.static(path.join(__dirname, "../client/dist")));
 
 // For any route not handled above, serve index.html (for React Router)
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../client/dist/index.html"));
-});
+//app.get("*", (req, res) => {
+//res.sendFile(path.join(__dirname, "../client/dist/index.html"));
+//});
 
 
 // MongoDB Connection and Server Start
